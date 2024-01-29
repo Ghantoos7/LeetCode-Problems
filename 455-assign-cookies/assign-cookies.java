@@ -10,7 +10,7 @@ class Solution {
         Arrays.sort(g);
         Arrays.sort(s);
 
-        int j = 0; // Index for cookies
+        int j = 0;
 
         while (i < g_len && j < s_len) {
             if (s[j] >= g[i]) {
