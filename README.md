@@ -1,8 +1,8 @@
 <div>
 <img alt="Static Badge" src="https://img.shields.io/badge/Total%20Problems%20Solved-16-blue">
 <img alt="Static Badge" src="https://img.shields.io/badge/Hard Solved-1-red">
-<img alt="Static Badge" src="https://img.shields.io/badge/Medium%20Solved-8-yellow">
-<img alt="Static Badge" src="https://img.shields.io/badge/HardSolved-7-green">
+<img alt="Static Badge" src="https://img.shields.io/badge/Medium%20Solved-8-orange">
+<img alt="Static Badge" src="https://img.shields.io/badge/HardSolved-7-emerlad">
 </div>
 
 
