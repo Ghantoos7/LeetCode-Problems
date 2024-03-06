@@ -1,8 +1,3 @@
-import javax.script.ScriptEngine;
-import javax.script.ScriptEngineManager;
-import javax.script.ScriptException;
-
-
 /**
  * Definition for singly-linked list.
  * public class ListNode {
