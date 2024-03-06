@@ -15,26 +15,24 @@ public class Solution {
         if (head == null){
             return false;
         }
-        
-        HashSet<ListNode> seen_nodes = new HashSet<>();
 
         ListNode current = head;
+        ListNode current_after = head;
 
-        seen_nodes.add(current);
+        while (current.next != null && current.next.next != null ){
 
-        while (current.next != null){
+            current = current.next.next;
+            current_after = current_after.next;
 
-            if (seen_nodes.contains(current.next)){
+            if (current == current_after){
                 return true;
             }
-
-
-            current = current.next;
-            seen_nodes.add(current);
-
+            
         }
 
         return false;
         
+        }
+
+        
     }
-}
