@@ -1,5 +1,5 @@
 <div>
-<img alt="Static Badge" src="https://img.shields.io/badge/Total%20Problems%20Solved-19-blue">
+<img alt="Endpoint Badge" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fgithub-apis-9e7a81551076.herokuapp.com%2Fgithub%2Fuser%2Frepos%2FLeetCode-Problems%2Ffolders">
 <img alt="Static Badge" src="https://img.shields.io/badge/Hard Solved-1-red">
 <img alt="Static Badge" src="https://img.shields.io/badge/Medium%20Solved-10-orange">
 <img alt="Static Badge" src="https://img.shields.io/badge/HardSolved-8-emerlad">
