@@ -1,23 +1,13 @@
 class Solution {
     public boolean isPalindrome(int x) {
-        
-        String s = ""+x;
+        if (x < 0) return false;
 
-        int left = 0;
-        int right =  s.length() - 1;
-
-        if (s.length() == 1 || s.length() == 0){
-            return true;
+        int original = x, reversed = 0;
+        while (x != 0) {
+            reversed = reversed * 10 + x % 10;
+            x /= 10;
         }
 
-        while (left < right && s.charAt(left) == s.charAt(right) ){
-
-            left++;
-            right--;
-        }
-
-        return s.charAt(left) == s.charAt(right);
-
-
+        return original == reversed;
     }
 }
