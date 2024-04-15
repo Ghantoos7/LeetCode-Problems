@@ -1,40 +1,29 @@
 class Solution {
-    public String removeKdigits(String num, int k) {
+    public static String removeKdigits(String num, int k) {
+		char[] digits = num.toCharArray();
+		if (k == num.length()) {
+			return "0";
+		}
 
-        int n = num.length();
-        ArrayDeque<Character> stack = new ArrayDeque<>();
+		char[] stack = new char[digits.length];
+		int stackTop = -1;
+		int removalCount = k;
 
-        for (char c : num.toCharArray()) {
-            while (!stack.isEmpty() && stack.peek() > c && k > 0) {
-                stack.pop();
-                k--;
-            }
-            stack.push(c);
-        }
+		for (int i = 0; i < digits.length; i++) {
+			while (removalCount > 0 && stackTop >= 0 && stack[stackTop] > digits[i]) {
+				stackTop--;
+				removalCount--;
+			}
+			stackTop++;
+			stack[stackTop] = digits[i];
+		}
 
-        while (k > 0 && !stack.isEmpty()) {
-            stack.pop();
-            k--;
-        }
+		int nonZeroStart = 0;
 
-        StringBuilder sb = new StringBuilder();
-        while (!stack.isEmpty()) {
-            sb.append(stack.pop());
-        }
+		while (stack[nonZeroStart] == '0' && nonZeroStart < digits.length - k - 1) {
+			nonZeroStart++;
+		}
 
-        sb.reverse();
-
-        int start = 0;
-        while (start < sb.length() && sb.charAt(start) == '0') {
-            start++;
-        }
-
-        sb = sb.delete(0, start);
-
-        if (sb.length() == 0) {
-            return "0";
-        }
-
-        return sb.toString();
-    }
+		return String.valueOf(stack, nonZeroStart, digits.length - k - nonZeroStart);
+	}	
 }
