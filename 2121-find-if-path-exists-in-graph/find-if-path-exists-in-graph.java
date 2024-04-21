@@ -1,5 +1,3 @@
-import java.util.*;
-
 public class Solution {
     public boolean validPath(int n, int[][] edges, int source, int destination) {
         if (source == destination) return true; 
@@ -18,7 +16,6 @@ public class Solution {
         queue.offer(source);
         visited.add(source);
 
-        // BFS loop
         while (!queue.isEmpty()) {
             int node = queue.poll();
 
