@@ -1,9 +1,3 @@
-<div>
-<img alt="Endpoint Badge" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fgithub-apis-9e7a81551076.herokuapp.com%2Fgithub%2Fuser%2Frepos%2FLeetCode-Problems%2Ffolders">
-<img alt="Endpoint Badge" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fgithub-apis-9e7a81551076.herokuapp.com%2Fgithub%2Fuser%2Frepos%2FLeetCode-Problems%2Fhard_problems_count">
-<img alt="Endpoint Badge" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fgithub-apis-9e7a81551076.herokuapp.com%2Fgithub%2Fuser%2Frepos%2FLeetCode-Problems%2Fmedium_problems_count">
-<img alt="Endpoint Badge" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fgithub-apis-9e7a81551076.herokuapp.com%2Fgithub%2Fuser%2Frepos%2FLeetCode-Problems%2Feasy_problems_count">
-</div>
 
 
 
